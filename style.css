@@ -1,0 +1,72 @@
+html {
+    background-image: url(Coffee-Beans-Wallpaper.jpg);
+    /*coffee beans background*/
+    background-size: cover;
+    /*leaves no white space*/
+}
+h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+    /*the first two values give the horizontal and vertical position: of the shadow while the third value give the blur on the shadow*/
+    background:linear-gradient(black,lightgray);
+    /*color goes from black to lightgray*/
+}
+p {
+    margin: auto;
+    /*centers the paragragh*/
+    position: relative;
+    /*sets the position to be able to move from where it was originally*/
+    left: 250px;
+    /*moves away from left*/
+    top: 100px;
+    /*moves downward*/
+    height: 150px;
+    width: 500px;
+    font-size: 25px;
+    background: radial-gradient(gray,black);
+    /*makes a circular radiant going from a gray inside to a black outside*/
+    color: white;
+    padding: 20px;
+    /*pushes the border away from itself*/
+    border-radius: 25px;
+    /*rounds the corners of the radius*/
+    border: 5px solid white;
+    /*border is a solid white line that is 5px wide*/
+    animation: appear 2s;
+    /*calls the animation to be played by now and how long it should last*/
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        /*makes it invisible*/
+        transform: scale(0);
+        /*makes the box extremely small*/
+    }
+    to{
+        opacity: 1;
+        /*makes the paragragh visible*/
+        transform: scale(1);
+        /*puts the paragragh to it original size*/
+    }
+}
+
+#dean {
+    float: left;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    left: 300px;
+    moves it 300px to the right
+    filter: invert(100%);
+    /*alters the original color of dean the coffee bean*/
+    transition: filter 2s;
+    /*tells the computer what will be transitioning*/
+}
+
+#dean:hover {
+    filter: invert(0%)
+    /*when the mouse is over the picture it goes to normal colors*/
+}
