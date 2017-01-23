@@ -58,8 +58,8 @@ p {
     width: 500px;
     height: 500px;
     position: relative;
-    left: 300px;
-    moves it 300px to the right
+    left: 250px;
+    /*moves it 300px to the right*/
     filter: invert(100%);
     /*alters the original color of dean the coffee bean*/
     transition: filter 2s;
